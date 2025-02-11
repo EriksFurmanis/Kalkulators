@@ -1,0 +1,128 @@
+/* Reset margin and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d2d2d; /* Dark background for dark mode */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Container */
+.calculator {
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+/* Display Area */
+.display {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    text-align: right;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Button Grid Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* General Button Styling */
+.btn {
+    background-color: #4a4a4a; /* Default dark background */
+    padding: 20px;
+    font-size: 1.5em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:active {
+    background-color: #555; /* Slightly lighter on active */
+}
+
+/* Calculation Buttons (Operators) - Dark Orange */
+.operator {
+    background-color: #d87a00; /* Dark orange */
+}
+
+.operator:active {
+    background-color: #b32d00; /* Darker orange on active */
+}
+
+/* History Section */
+.history {
+    margin-top: 20px;
+}
+
+.history h3 {
+    color: #e6a500; /* Light orange color for history heading */
+}
+
+/* History List */
+ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+ul li {
+    background-color: #444;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Button Hover and Focus Styles */
+button {
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8; /* Button hover effect */
+}
+
+button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+/* Clear History Button (Dark Red) */
+.clear-history {
+    background-color: #b32d00; /* Dark red */
+    padding: 10px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.clear-history:hover {
+    opacity: 0.8; /* Slight opacity on hover */
+}
+
+.clear-history:active {
+    background-color: #9a1f00; /* Darker red on active */
+}
